@@ -36,7 +36,7 @@ const printCards = (arr) => {
                 <span class="card-title">${element.Title}</span>
             </div>
             <div class="card-content">
-                <p>${element.Plot}</p>
+                <p>Year:${element.Year}. Plot: ${element.Plot}</p>
             </div>
             </div>
         </div>
