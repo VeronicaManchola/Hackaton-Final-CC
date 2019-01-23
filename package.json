@@ -1,0 +1,29 @@
+{
+  "name": "hackaton-final-cc",
+  "version": "1.0.0",
+  "description": "tracker for movies sagas",
+  "main": "main.js",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2",
+    "omdb-client": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeronicaManchola/Hackaton-Final-CC.git"
+  },
+  "keywords": [
+    "movies",
+    "saga",
+    "tracker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeronicaManchola/Hackaton-Final-CC/issues"
+  },
+  "homepage": "https://github.com/VeronicaManchola/Hackaton-Final-CC#readme"
+}
