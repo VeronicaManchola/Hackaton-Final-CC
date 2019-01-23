@@ -3,19 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let arr = [];
+let arrMovies = [4154664,4154796,6565702];
+let url = `http://www.omdbapi.com/?i=tt'+arrMovies+0'&apikey=c6c08c99`
+
+console.log(url)
 
 
-
-
-    let arrMovies = [4154664,4154796,6565702];
-    let url = `http://www.omdbapi.com/?i=tt'+arrMovies+'&apikey=c6c08c99`
-    console.log(url)
-
-    
-    for(arrMovies=0; arrMovies<=1; arrMovies++){
+    for(arrMovies=0; arrMovies<=3; arrMovies++){
     fetch(url)
-    .then(res => res.json())
-    .then((out) => {
+        .then(res => res.json())
+        .then((out) => {
 
         if(out.Response === "True"){
             arrMovies.push(out);
