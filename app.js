@@ -4,43 +4,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
 let arr = [];
 
-for(i=1; i<=9; i++){
-    let url = `http://www.omdbapi.com/?i=tt000000${i}&apikey=c6c08c99`
 
+
+
+    let arrMovies = [4154664,4154796,6565702];
+    let url = `http://www.omdbapi.com/?i=tt'+arrMovies+'&apikey=c6c08c99`
+    console.log(url)
+
+    
+    for(arrMovies=0; arrMovies<=1; arrMovies++){
     fetch(url)
     .then(res => res.json())
     .then((out) => {
 
         if(out.Response === "True"){
-            arr.push(out);
+            arrMovies.push(out);
         };
-        printCards(arr);
+        printCards(arrMovies);
     })
     .catch(err => { throw err });
 }
 
-const printCards = (arr) => {
+const printCards = (arrMovies) => {
 
     let mainDiv = document.getElementById("root");
     mainDiv.innerHTML = "";
 
 
-    arr.forEach(element => {
+    arrMovies.forEach(element => {
 
         mainDiv.innerHTML += `
         <div class="row">
         <div class="col s12 m7">
             <div class="card large">
             <div class="card-image">
-                <img src="${element.Poster}">
-                <span class="card-title">${element.Title}</span>
+                <img src="${element.Title}">
+                <span class="card-title">${element.Plot}</span>
             </div>
             <div class="card-content">
-                <p>Year:${element.Year}. Plot: ${element.Plot}</p>
+                <p>Year:${element.Year}</p>
             </div>
             </div>
         </div>
         </div>
         `
     });
+
 }
