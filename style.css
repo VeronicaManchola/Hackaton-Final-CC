@@ -21,9 +21,9 @@ main {
   flex: 1 0 auto;
 }
   
-.carousel{
-    width: 4vh;
-    height: 4vw;
+.carousel {
+   background-color: #999999;
+
 }
 
 h2{
