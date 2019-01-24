@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    window.M.AutoInit();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var Modalelem = document.querySelector('.modal');
-    var instance = M.Modal.init(Modalelem);
+    let Modalelem = document.querySelector('.modal');
+    let instance = M.Modal.init(Modalelem);
     instance.open();
+    close.onclick = () => {
+        instance.close();
+        homePage.style.display = "block";
+    }
 });
 
 let arr = [];
@@ -19,15 +19,6 @@ let movieDetails = document.getElementById("movie-details");
 let close = document.getElementById("close");
 let instructionSlide = document.getElementById("instruction-slide");
 let homePage = document.getElementById("homePage");
-
-window.onload = () => {
-    homePage.style.display = "none";
-}
-
-close.onclick = () => {
-    instructionSlide.style.display = "none";
-    homePage.style.display = "block";
-}
 
 btnHarryPotter.addEventListener("click", () => {
     homePage.style.display = "none";
