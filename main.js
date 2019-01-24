@@ -7,23 +7,30 @@ let btnHarryPotter = document.getElementById("harryPotter");
 let btnStarWars = document.getElementById("starWars");
 let btnMarvel = document.getElementById("marvel");
 let btnLotr = document.getElementById("lotr");
+let webDetails = document.getElementById("web-details");
+let universeDetails = document.getElementById("universe-details");
+let movieDetails = document.getElementById("movie-details");
 
 btnHarryPotter.addEventListener("click", () => {
+    webDetails.style.display = "none";
     const movie = ["0241527", "0295297", "0304141", "0330373", "0373889", "0417741", "0926084", "1201607", "3183660", "4123430"]
     printMovies(movie);
 });
 
 btnStarWars.addEventListener("click", () => {
+    webDetails.style.display = "none";
     const movie = ["0076759", "0080684", "0086190", "0120915", "0121765", "0121766", "2488496", "2527336", "3748528", "3778644"]
     printMovies(movie);
 });
 
 btnMarvel.addEventListener("click", () => {
+    webDetails.style.display = "none";
     const movie = ["0371746", "0800080", "1228705", "0800369", "0458339", "0848228", "1300854", "1981115", "1843866", "2015381", "2395427", "0478970", "3498820", "1211837", "3896198", "2250912", "3501632", "1825683", "4154756", "5095030"]
     printMovies(movie);
 });
 
 btnLotr.addEventListener("click", () => {
+    webDetails.style.display = "none";
     const movie = ["0120737", "0167261", "0167260", "0903624", "1170358", "2310332"]
     printMovies(movie);
 });
@@ -48,58 +55,51 @@ const printMovies = (movie) => {
 
     const printCards = (arr) => {
 
-        let root = document.getElementById("root");
-        let universeDetails = document.getElementById("universe-details");
-        let movieDetails = document.getElementById("movie-details");
-
-        root.innerHTML = "";
+        universeDetails.innerHTML = "";
 
         const sort = window.sort.older(arr);
 
         sort.forEach(element => {
 
-            root.innerHTML += `
-            <div class="row">
-                <div class="col s5 m4 l3">
-                    <div class="card medium">
-                        <button id="infobtn${element.imdbID}">
-                            <div class="card-image">
-                                <img src="${element.Poster}">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title">${element.Title}</span>
-                            </div>
-                        </a>
-                    </div>
+            universeDetails.innerHTML += `
+            <div class="col s5 m4 l3">
+                <div class="card medium">
+                    <a class="btnCard" id="infobtn${element.imdbID}">
+                        <div class="card-image">
+                            <img src="${element.Poster}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">${element.Title}</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             `
         });
 
         sort.forEach(element => {
-            let detailsBtn = document.getElementById(infobtn + element.imdbID)
+            let detailsBtn = document.getElementById("infobtn" + element.imdbID)
 
             detailsBtn.onclick = () => {
-                root.style.display = "none";
+                console.log("click");
+                webDetails.style.display = "none";
                 universeDetails.style.display = "none"
 
                 movieDetails.innerHTML += `
-                <div class="row">
                 <div class="col s5 m4 l3">
                     <div class="card medium">
-                    <div class="card-image">
-                        <img src="${element.Poster}">
+                        <div class="card-image">
+                            <img src="${element.Poster}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">${element.Title}</span>
+                            <ul>
+                                <li>Year: ${element.Year}</li>
+                                <li>Plot: ${element.Plot}</li>
+                                <li>Director: ${element.Director}</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title">${element.Title}</span>
-                        <ul>
-                            <li>Year: ${element.Year}</li>
-                            <li>Plot: ${element.Plot}</li>
-                            <li>Director: ${element.Director}</li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
                 </div>
                 `
             }

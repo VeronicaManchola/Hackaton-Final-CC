@@ -10,17 +10,49 @@
 p{
     color: black;
 }
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
   
 .carousel{
     width: 4vh;
     height: 4vw;
+}
+
+h2{
+    text-align: center;
+}
+
+.btnCard{
+    cursor: pointer;
+}
+
+#harryPotter, #starWars, #marvel, #lotr{
+    background-size: cover;
+    height: 300px;
+    width: -moz-available;
+    background-color: #ffffff;
+}
+
+#harryPotter{
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/harry-potter-logo-32523.png");
+}
+
+#starWars{
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/felpudo-star-wars-logo-clasico-large2.jpg");
+}
+
+#marvel{
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/1200px-MarvelLogo.svg.png");
+}
+
+#lotr{
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Lord-of-The-Rings-Logo-PNG-Transparent-Image.png")
 }
