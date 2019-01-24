@@ -21,14 +21,14 @@ let instructionSlide = document.getElementById("instruction-slide");
 let homePage = document.getElementById("homePage");
 
 btnHarryPotter.addEventListener("click", () => {
-    document.body.style.backgroundImage ="url('')";
+    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/HarryP.jpeg')";
     homePage.style.display = "none";
     const movie = ["0241527", "0295297", "0304141", "0330373", "0373889", "0417741", "0926084", "1201607", "3183660", "4123430"]
     printMovies(movie);
 });
 
 btnStarWars.addEventListener("click", () => {
-    document.body.style.backgroundImage ="url('')";
+    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/StarWars.jpeg')";
     homePage.style.display = "none";
     const movie = ["0076759", "0080684", "0086190", "0120915", "0121765", "0121766", "2488496", "2527336", "3748528", "3778644"]
     printMovies(movie);
@@ -42,7 +42,7 @@ btnMarvel.addEventListener("click", () => {
 });
 
 btnLotr.addEventListener("click", () => {
-    document.body.style.backgroundImage ="url('')";
+    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/LordOTR.jpeg')";
     homePage.style.display = "none";
     const movie = ["0120737", "0167261", "0167260", "0903624", "1170358", "2310332"]
     printMovies(movie);

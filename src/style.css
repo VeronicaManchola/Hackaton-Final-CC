@@ -64,6 +64,7 @@ main {
     padding: 10px;
     margin: 10px;
     background-color: transparent;
+    object-fit: cover;
 }
 
 #harryPotter, #starWars, #marvel, #lotr{
