@@ -23,7 +23,6 @@ main {
   
 .carousel {
     background-color: #999999;
-    border: 1px solid #C71C81;
     box-sizing: border-box;
     border-radius: 12px;
 }
