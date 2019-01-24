@@ -1,0 +1,26 @@
+.nav-bar{
+    background-color: #ffff;
+
+}
+
+#nav-logo{
+    height:60px;
+}
+
+p{
+    color: black;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+.carousel{
+    width: 4vh;
+    height: 4vw;
+}

@@ -60,17 +60,18 @@ const printMovies = (movie) => {
 
             root.innerHTML += `
             <div class="row">
-            <div class="col s5 m4 l3">
-                <div class="card medium">
-                <a class="buttonCard" id="infobtn${element.imdbID}">
-                <div class="card-image">
-                    <img src="${element.Poster}">
+                <div class="col s5 m4 l3">
+                    <div class="card medium">
+                        <button id="infobtn${element.imdbID}">
+                            <div class="card-image">
+                                <img src="${element.Poster}">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">${element.Title}</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <span class="card-title">${element.Title}</span>
-                </div>
-                </div>
-            </div>
             </div>
             `
         });
