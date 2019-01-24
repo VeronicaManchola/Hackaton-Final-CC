@@ -42,6 +42,7 @@ btnStarWars.addEventListener("click", () => {
 });
 
 btnMarvel.addEventListener("click", () => {
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/Marvel.jpg')";
     homePage.style.display = "none";
     const movie = ["0371746", "0800080", "1228705", "0800369", "0458339", "0848228", "1300854", "1981115", "1843866", "2015381", "2395427", "0478970", "3498820", "1211837", "3896198", "2250912", "3501632", "1825683", "4154756", "5095030"]
     printMovies(movie);
@@ -81,10 +82,8 @@ const printMovies = (movie) => {
 
             universeDetails.innerHTML += `
             <div class="col s6 m4 l3">
-                <div class="card medium">
-                    <a class="btnCard" id="infobtn${element.imdbID}">
-                        <img class="responsive-img" src="${element.Poster}">
-                    </a>
+                <div class="btnCard card medium"" id="infobtn${element.imdbID}">
+                    <img class="responsive-img" src="${element.Poster}">
                 </div>
             </div>
             `
