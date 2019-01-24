@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    window.M.AutoInit();
+    let Modalelem = document.querySelector('.modal');
+    let instance = M.Modal.init(Modalelem);
+    instance.open();
+    close.onclick = () => {
+        instance.close();
+        homePage.style.display = "block";
+    }
 });
 
 let arr = [];
@@ -15,21 +21,6 @@ let close = document.getElementById("close");
 let instructionSlide = document.getElementById("instruction-slide");
 let homePage = document.getElementById("homePage");
 
-window.onload = () => {
-    homePage.style.display = "none";
-}
-
-close.onclick = () => {
-    instructionSlide.style.display = "none";
-    homePage.style.display = "block";
-}
-
-btnHome.addEventListener("click",()=>{
-    location.reload();
-})
-
-
-
 btnHarryPotter.addEventListener("click", () => {
     homePage.style.display = "none";
     const movie = ["0241527", "0295297", "0304141", "0330373", "0373889", "0417741", "0926084", "1201607", "3183660", "4123430"]
@@ -43,6 +34,7 @@ btnStarWars.addEventListener("click", () => {
 });
 
 btnMarvel.addEventListener("click", () => {
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/Marvel.jpg')";
     homePage.style.display = "none";
     const movie = ["0371746", "0800080", "1228705", "0800369", "0458339", "0848228", "1300854", "1981115", "1843866", "2015381", "2395427", "0478970", "3498820", "1211837", "3896198", "2250912", "3501632", "1825683", "4154756", "5095030"]
     printMovies(movie);
@@ -59,7 +51,7 @@ const printMovies = (movie) => {
     for (i = 0; i < movie.length; i++) {
 
         arr = [];
-        let url = `http://www.omdbapi.com/?i=tt${movie[i]}&apikey=b9ccb762`
+        let url = `https://www.omdbapi.com/?i=tt${movie[i]}&apikey=b9ccb762`
 
         fetch(url)
             .then(res => res.json())
@@ -82,10 +74,8 @@ const printMovies = (movie) => {
 
             universeDetails.innerHTML += `
             <div class="col s6 m4 l3">
-                <div class="card medium">
-                    <a class="btnCard" id="infobtn${element.imdbID}">
-                        <img class="responsive-img" src="${element.Poster}">
-                    </a>
+                <div class="btnCard card medium"" id="infobtn${element.imdbID}">
+                    <img class="responsive-img" src="${element.Poster}">
                 </div>
             </div>
             `
