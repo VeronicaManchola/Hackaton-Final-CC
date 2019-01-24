@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let arr = [];
+let btnHome= document.getElementById("nav-logo");
 let btnHarryPotter = document.getElementById("harryPotter");
 let btnStarWars = document.getElementById("starWars");
 let btnMarvel = document.getElementById("marvel");
@@ -22,6 +23,12 @@ close.onclick = () => {
     instructionSlide.style.display = "none";
     homePage.style.display = "block";
 }
+
+btnHome.addEventListener("click",()=>{
+    location.reload();
+})
+
+
 
 btnHarryPotter.addEventListener("click", () => {
     homePage.style.display = "none";
