@@ -6,11 +6,14 @@
     height:60px;
 }
 
-p{
+p, li{
     color: black;
 }
-b{
+.plotColor, p{
     color:white;
+}
+b{
+    color: #C71C81;
 }
 
 body {

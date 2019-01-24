@@ -98,17 +98,19 @@ const printMovies = (movie) => {
                             <img src="${element.Poster}">
                         </div>
                         <div>
-                            <p>${element.Title}</p>
-                            <p>Genre: ${element.Rated}</p>
-                            <p>Genre: ${element.Genre}</p>
-                            <p>Time: ${element.Runtime}</p>
+                            <li>${element.Title}</li>
+                            <li>Genre: ${element.Rated}</li>
+                            <li>Genre: ${element.Genre}</li>
+                            <li>Time: ${element.Runtime}</li>
                         </div>
                     </div>
                 </div>
-
+                    <br>
+                    <br>
                 <div class="col s5 m4 l3">
                         <div id="plotColor">
-                            <b>Plot: ${element.Plot}</b>
+                            <b>Plot: <b>
+                            <p>${element.Plot}</p>
                         </div>
                    
                 </div>
