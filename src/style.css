@@ -66,6 +66,11 @@ main {
     background-color: transparent;
     object-fit: cover;
 }
+.card .image{
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
+}
 
 #harryPotter, #starWars, #marvel, #lotr{
     background-size: contain;
