@@ -34,7 +34,6 @@ h2{
 #sagasContainer{
     border: 1px solid #3F559E;
     box-sizing: border-box;
-    display: none;
 }
 
 .col.s12.m5.l6{
@@ -56,17 +55,17 @@ h2{
 }
 
 #harryPotter{
-    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/harry-potter-logo-32523.png");
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/580b57fbd9996e24bc43bd6a.png");
 }
 
 #starWars{
-    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/felpudo-star-wars-logo-clasico-large2.jpg");
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/felpudo-star-wars-logo-clasico-large2.jpg");
 }
 
 #marvel{
-    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/1200px-MarvelLogo.svg.png");
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/1200px-MarvelLogo.svg.png");
 }
 
 #lotr{
-    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Lord-of-The-Rings-Logo-PNG-Transparent-Image.png")
+    background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/Lord-of-The-Rings-Logo-PNG-Transparent-Image.png")
 }
