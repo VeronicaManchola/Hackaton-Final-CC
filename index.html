@@ -46,7 +46,7 @@
     <section>
         <div id="instruction-slide">
             <!-- Modal Structure -->
-            <div id="modal" class="modal modal-fixed-footer">
+            <div id="modal" class="modal">
                 <div class="carousel carousel-slider center">
                     <div class="carousel-fixed-item center">
                     </div>
@@ -70,13 +70,26 @@
                             <img src="https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Carrussel/Photo04.png">
                         </div>
                     </div>
-                    <a class="btn waves-effect white grey-text darken-text-2" id="close">Close</a>
+                    <div>
+                        <a class="btn waves-effect white grey-text darken-text-2" id="close">Close</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="homePage">
+
+        <div id="searchBar" class="container">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" placeholder="Search here" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+
         <div class="container" id="sagasContainer">
             <div id="web-details" class="row">
                 <h2 id="sagasTitle">Sagas</h2>
