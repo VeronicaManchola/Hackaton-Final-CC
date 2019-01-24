@@ -2,6 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
     window.M.AutoInit();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var Modalelem = document.querySelector('.modal');
+    var instance = M.Modal.init(Modalelem);
+    instance.open();
+});
+
+
+/*let loadModal= document.getElementById("modal1")
+
+window.onload = function(){
+    instance.open(loadModal);
+};
+console.log(loadModal)*/
+
+
 let arr = [];
 let btnHarryPotter = document.getElementById("harryPotter");
 let btnStarWars = document.getElementById("starWars");
