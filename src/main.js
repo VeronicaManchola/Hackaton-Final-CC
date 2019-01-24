@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let arr = [];
+let btnHome= document.getElementById("nav-logo");
 let btnHarryPotter = document.getElementById("harryPotter");
 let btnStarWars = document.getElementById("starWars");
 let btnMarvel = document.getElementById("marvel");
