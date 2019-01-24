@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
-    <title>Movie app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title> SagaApp</title>
 </head>
+
 <body>
-    <a class="waves-effect waves-light btn" id="harryPotter">Harry Potter</a>
-    <a class="waves-effect waves-light btn" id="starWars">Star Wars</a>
-    <a class="waves-effect waves-light btn" id="marvel">Marvel</a>
-    <div id="root">
-        
-    </div>
-    
+  
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-wrapper">
+                <img id="nav-logo" src="https://raw.githubusercontent.com/FranciscaMora/Hackaton-Final-CC/master/Img/logofran.png"
+                    alt="app-logo">
+                <!-- <div class="app-logo"> -->
+                <!-- </div> -->
+                <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+                <!-- <ul class="right hide-on-med-and-down">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                </ul> -->
+            </div>
+        </nav>
+
+        <!-- <ul class="sidenav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li> -->
+        <!-- </ul> -->
+
+    </header>
+
+    <section>
+        <div id=instruction-slide">
+
+        </div>
+    </section>
+
+    <section id="buttons">
+        <a class="waves-effect waves-light btn" id="harryPotter">Harry Potter</a>
+        <a class="waves-effect waves-light btn" id="starWars">Star Wars</a>
+        <a class="waves-effect waves-light btn" id="marvel">Marvel</a>
+        <a class="waves-effect waves-light btn" id="lotr">Lord Of The Rings</a>
+    </section>
+
+    <section id="web-details">
+        <div id="root">
+
+        </div>
+    </section>
+
+    <section>
+        <div id="universe-details"></div>
+    </section>
+
+    <section>
+        <div id="movie-details">
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+                                                                   
     <script src="main.js"></script>
     <script src="app.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
