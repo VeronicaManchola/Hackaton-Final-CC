@@ -107,8 +107,8 @@ const printMovies = (movie) => {
                 </div>
 
                 <div class="col s5 m4 l3">
-                        <div>
-                            <p>Plot: ${element.Plot}</p>
+                        <div id="plotColor">
+                            <b>Plot: ${element.Plot}</b>
                         </div>
                    
                 </div>

@@ -9,6 +9,9 @@
 p{
     color: black;
 }
+b{
+    color:white;
+}
 
 body {
     display: flex;
@@ -97,3 +100,4 @@ main {
 #lotr{
     background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/Lord-of-The-Rings-Logo-PNG-Transparent-Image.png")
 }
+
