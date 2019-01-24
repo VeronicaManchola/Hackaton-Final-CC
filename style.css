@@ -29,15 +29,27 @@ h2{
     text-align: center;
 }
 
+#sagasContainer{
+    border: 1px solid #3F559E;
+    box-sizing: border-box;
+}
+
+.col.s12.m5.l6{
+    padding: .75rem;
+}
+
 .btnCard{
     cursor: pointer;
 }
 
 #harryPotter, #starWars, #marvel, #lotr{
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 15rem;
     width: -moz-available;
-    background-color: #ffffff;
+    background-color: transparent;
+    color: transparent;
 }
 
 #harryPotter{

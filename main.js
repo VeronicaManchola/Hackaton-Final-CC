@@ -63,14 +63,11 @@ const printMovies = (movie) => {
         sort.forEach(element => {
 
             universeDetails.innerHTML += `
-            <div class="col s5 m4 l3">
+            <div class="col s6 m4 l3">
                 <div class="card medium">
                     <a class="btnCard" id="infobtn${element.imdbID}">
                         <div class="card-image">
                             <img src="${element.Poster}">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">${element.Title}</span>
                         </div>
                     </a>
                 </div>
