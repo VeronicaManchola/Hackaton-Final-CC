@@ -18,7 +18,12 @@ body {
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+  
+.carousel{
+    width: 4vh;
+    height: 4vw;
 }
 
 h2{
