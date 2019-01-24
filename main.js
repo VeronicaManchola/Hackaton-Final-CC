@@ -10,7 +10,18 @@ let btnLotr = document.getElementById("lotr");
 let webDetails = document.getElementById("web-details");
 let universeDetails = document.getElementById("universe-details");
 let movieDetails = document.getElementById("movie-details");
-let btnWavesEffect = document.getElementById("waves-effect");
+let close = document.getElementById("close");
+let instructionSlide = document.getElementById("instruction-slide");
+let sagasContainer = document.getElementById("sagasContainer");
+
+window.onload = () => {
+    sagasContainer.style.display = "none";
+}
+
+close.onclick = () => {
+    instructionSlide.style.display = "none";
+    sagasContainer.style.display = "block";
+}
 
 btnHarryPotter.addEventListener("click", () => {
     webDetails.style.display = "none";
