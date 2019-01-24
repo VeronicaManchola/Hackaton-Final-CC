@@ -50,7 +50,7 @@ const printMovies = (movie) => {
     for (i = 0; i < movie.length; i++) {
 
         arr = [];
-        let url = `http://www.omdbapi.com/?i=tt${movie[i]}&apikey=b9ccb762`
+        let url = `https://www.omdbapi.com/?i=tt${movie[i]}&apikey=b9ccb762`
 
         fetch(url)
             .then(res => res.json())
