@@ -1,6 +1,5 @@
 .nav-bar{
     background-color: #ffff;
-
 }
 
 #nav-logo{
@@ -22,8 +21,10 @@ main {
 }
   
 .carousel {
-   background-color: #999999;
-
+    background-color: #999999;
+    border: 1px solid #C71C81;
+    box-sizing: border-box;
+    border-radius: 12px;
 }
 
 h2{
@@ -33,6 +34,7 @@ h2{
 #sagasContainer{
     border: 1px solid #3F559E;
     box-sizing: border-box;
+    display: none;
 }
 
 .col.s12.m5.l6{
