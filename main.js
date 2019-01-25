@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    window.M.AutoInit();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     let Modalelem = document.querySelector('.modal');
     let instance = M.Modal.init(Modalelem);
     instance.open();
@@ -6,6 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
         instance.close();
         homePage.style.display = "block";
     }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, ({
+        fullWidth: true,
+        indicators: true
+    }));
 });
 
 let arr = [];
