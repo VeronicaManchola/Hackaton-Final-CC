@@ -7,8 +7,14 @@
     cursor: pointer;
 }
 
-p{
+p, li{
     color: black;
+}
+.plotColor, p{
+    color:white;
+}
+b{
+    color: #C71C81;
 }
 
 body {
@@ -22,11 +28,20 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.modal{
+    background-color: #999999 !important;
+    box-shadow: none !important;
+    width: 19% !important;
+    border-radius: 12px !important;
+}
   
-.carousel {
-    background-color: #999999;
-    box-sizing: border-box;
-    border-radius: 12px;
+#carouselSize{
+    min-height: 29rem;
+}
+
+#carouselImage1, #carouselImage2, #carouselImage3, #carouselImage4{
+    border-radius: 8px;
 }
 
 .input-field{
@@ -61,8 +76,16 @@ main {
 
 .btnCard.card.medium{
     cursor: pointer;
-    max-height: 300px;
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
     background-color: transparent;
+    object-fit: cover;
+}
+.card .image{
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
 }
 
 #harryPotter, #starWars, #marvel, #lotr{
@@ -90,3 +113,4 @@ main {
 #lotr{
     background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/Lord-of-The-Rings-Logo-PNG-Transparent-Image.png")
 }
+
