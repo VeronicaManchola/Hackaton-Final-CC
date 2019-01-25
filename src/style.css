@@ -10,9 +10,11 @@
 p, li{
     color: black;
 }
+
 .plotColor, p{
     color:white;
 }
+
 b{
     color: #C71C81;
 }
