@@ -7,8 +7,14 @@
     cursor: pointer;
 }
 
-p{
+p, li{
     color: black;
+}
+.plotColor, p{
+    color:white;
+}
+b{
+    color: #C71C81;
 }
 
 body {
@@ -70,8 +76,16 @@ main {
 
 .btnCard.card.medium{
     cursor: pointer;
-    max-height: 300px;
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
     background-color: transparent;
+    object-fit: cover;
+}
+.card .image{
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
 }
 
 #harryPotter, #starWars, #marvel, #lotr{
@@ -99,3 +113,4 @@ main {
 #lotr{
     background-image: url("https://raw.githubusercontent.com/VeronicaManchola/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Cuadro%20sagas/Lord-of-The-Rings-Logo-PNG-Transparent-Image.png")
 }
+
