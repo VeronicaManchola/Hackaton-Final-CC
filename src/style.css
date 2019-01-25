@@ -22,11 +22,20 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.modal{
+    background-color: #999999 !important;
+    box-shadow: none !important;
+    width: 19% !important;
+    border-radius: 12px !important;
+}
   
-.carousel {
-    background-color: #999999;
-    box-sizing: border-box;
-    border-radius: 12px;
+#carouselSize{
+    min-height: 29rem;
+}
+
+#carouselImage1, #carouselImage2, #carouselImage3, #carouselImage4{
+    border-radius: 8px;
 }
 
 .input-field{
