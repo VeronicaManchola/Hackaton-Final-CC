@@ -10,11 +10,14 @@
 p, li{
     color: black;
 }
+
 .plotColor, p{
     color:white;
 }
+
 b{
     color: #C71C81;
+    font-size: 1.2rem;
 }
 
 body {
@@ -32,16 +35,21 @@ main {
 .modal{
     background-color: #999999 !important;
     box-shadow: none !important;
-    width: 19% !important;
     border-radius: 12px !important;
+    padding: 0 4% !important;
 }
   
 #carouselSize{
-    min-height: 29rem;
+    min-height: 100% !important;
 }
 
 #carouselImage1, #carouselImage2, #carouselImage3, #carouselImage4{
-    border-radius: 8px;
+    border-radius: 12px;
+}
+
+.carousel .carousel-item > img{
+    max-height: 100%;
+    width: auto !important;
 }
 
 .searchBar{
