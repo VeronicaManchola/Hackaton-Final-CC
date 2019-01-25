@@ -113,7 +113,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     height: 15rem;
-    width: -moz-available;
+    width: 100%;
     background-color: transparent;
     color: transparent;
 }
