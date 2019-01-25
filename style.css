@@ -17,6 +17,7 @@ p, li{
 
 b{
     color: #C71C81;
+    font-size: 1.2rem;
 }
 
 body {
@@ -25,6 +26,9 @@ body {
     flex-direction: column;
     background-color: #8C8C8C;
     font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 main {
@@ -34,23 +38,37 @@ main {
 .modal{
     background-color: #999999 !important;
     box-shadow: none !important;
-    width: 19% !important;
     border-radius: 12px !important;
+    padding: 0 4% !important;
 }
   
 #carouselSize{
-    min-height: 29rem;
+    min-height: 100% !important;
+    height: 400px !important;
+
 }
 
-#carouselImage1, #carouselImage2, #carouselImage3, #carouselImage4{
-    border-radius: 8px;
+#carouselImage1, #carouselImage2, #carouselImage3{
+    border-radius: 12px;
 }
 
-.input-field{
-    background: rgba(255, 255, 255, 0.86);
-    border: 1px solid #C71C81;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.carousel .carousel-item > img{
+    max-height: 100%;
+    width: auto !important;
+}
+
+.searchBar{
+    background: rgba(255, 255, 255, 0.86) !important;
+    border: 1px solid #C71C81 !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+.material-icons{
+    position: absolute !important;
+    top: 0.5rem !important;
+    right: 1rem !important;
+    color: #C71C81 !important;
 }
 
 #sagasTitle{
