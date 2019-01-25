@@ -3,18 +3,21 @@
 }
 
 #nav-logo{
-    height:60px;
+    height:90%;
     cursor: pointer;
 }
 
 p, li{
     color: black;
 }
+
 .plotColor, p{
     color:white;
 }
+
 b{
     color: #C71C81;
+    font-size: 1.2rem;
 }
 
 body {
@@ -23,6 +26,9 @@ body {
     flex-direction: column;
     background-color: #8C8C8C;
     font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 main {
@@ -32,16 +38,23 @@ main {
 .modal{
     background-color: #999999 !important;
     box-shadow: none !important;
-    width: 19% !important;
     border-radius: 12px !important;
+    padding: 0 4% !important;
 }
   
 #carouselSize{
-    min-height: 29rem;
+    min-height: 100% !important;
+    height: 400px !important;
+
 }
 
-#carouselImage1, #carouselImage2, #carouselImage3, #carouselImage4{
-    border-radius: 8px;
+#carouselImage1, #carouselImage2, #carouselImage3{
+    border-radius: 12px;
+}
+
+.carousel .carousel-item > img{
+    max-height: 100%;
+    width: auto !important;
 }
 
 .searchBar{
@@ -100,7 +113,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     height: 15rem;
-    width: -moz-available;
+    width: 100%;
     background-color: transparent;
     color: transparent;
 }
