@@ -124,7 +124,7 @@ const printMovies = (movie) => {
         sort.forEach(element => {
 
             universeDetails.innerHTML += `
-            <div class="col s6 m4 l3">
+            <div class="col s10 m4 l3">
                 <div class="btnCard card medium"" id="infobtn${element.imdbID}">
                     <img class="responsive-img" src="${element.Poster}">
                 </div>
@@ -144,22 +144,22 @@ const printMovies = (movie) => {
                 movieDetails.innerHTML = "";
 
                 movieDetails.innerHTML += `
-                <div class="col s5 m4 l3">
+                <div class="col s6 m6 l6">
                     <div class="card medium">
                         <div class="card-image">
                             <img class="responsive-img" src="${element.Poster}">
                         </div>
-                        <div>
+                        <ul>
                             <li>${element.Title}</li>
                             <li>Genre: ${element.Rated}</li>
                             <li>Genre: ${element.Genre}</li>
                             <li>Time: ${element.Runtime}</li>
-                        </div>
+                        </ul>
                     </div>
                 </div>
                     <br>
                     <br>
-                <div class="col s5 m4 l3">
+                <div class="col s6 m6 l6">
                         <div id="plotColor">
                             <b>Plot: <b>
                             <p>${element.Plot}</p>
