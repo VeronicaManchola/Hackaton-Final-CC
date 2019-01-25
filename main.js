@@ -45,7 +45,7 @@ btnHome.onclick = () => {
 searchBtn.addEventListener("click", () => {
     let name = searchContent.value;
     let movie = [];
-    let url = `http://www.omdbapi.com/?s=${name}&apikey=b9ccb762`
+    let url = `https://www.omdbapi.com/?s=${name}&apikey=b9ccb762`
     fetch(url)
         .then(res => res.json())
         .then((out) => {
