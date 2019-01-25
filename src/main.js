@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let arr = [];
-let btnHome = document.getElementById("nav-logo");
+let btnHome = document.getElementById("navLogo");
 let btnHarryPotter = document.getElementById("harryPotter");
 let btnStarWars = document.getElementById("starWars");
 let btnMarvel = document.getElementById("marvel");
