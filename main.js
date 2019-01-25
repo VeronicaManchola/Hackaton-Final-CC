@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, ({
         fullWidth: true,
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let arr = [];
-let btnHome= document.getElementById("nav-logo");
+let btnHome = document.getElementById("nav-logo");
 let btnHarryPotter = document.getElementById("harryPotter");
 let btnStarWars = document.getElementById("starWars");
 let btnMarvel = document.getElementById("marvel");
@@ -32,16 +32,39 @@ let movieDetails = document.getElementById("movie-details");
 let close = document.getElementById("close");
 let instructionSlide = document.getElementById("instruction-slide");
 let homePage = document.getElementById("homePage");
+let searchBtn = document.getElementById("searchBtn")
+let searchContent = document.getElementById("search")
 
-btnHome.onclick = () =>{
+btnHome.onclick = () => {
     universeDetails.style.display = "none";
     movieDetails.style.display = "none";
     homePage.style.display = "block";
     webDetails.style.display = "block";
 }
 
+searchBtn.addEventListener("click", () => {
+    let name = searchContent.value;
+    let movie = [];
+    let url = `http://www.omdbapi.com/?s=${name}&apikey=b9ccb762`
+    fetch(url)
+        .then(res => res.json())
+        .then((out) => {
+            if (out.Response === "True") {
+                let arrLength = out.Search;
+                for (i = 0; i < arrLength.length; i++) {
+                    let id = arrLength[i].imdbID;
+                    movie.push(id.slice(2))
+                }
+            };
+            printMovies(movie);
+        })
+        .catch(err => { throw err });
+    homePage.style.display = "none";
+    webDetails.style.display = "none";
+});
+
 btnHarryPotter.addEventListener("click", () => {
-    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/HarryP.jpeg')";
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/HarryP.jpeg')";
     homePage.style.display = "none";
     movieDetails.style.display = "block";
     const movie = ["0241527", "0295297", "0304141", "0330373", "0373889", "0417741", "0926084", "1201607", "3183660", "4123430"]
@@ -49,7 +72,7 @@ btnHarryPotter.addEventListener("click", () => {
 });
 
 btnStarWars.addEventListener("click", () => {
-    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/StarWars.jpeg')";
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/StarWars.jpeg')";
     homePage.style.display = "none";
     movieDetails.style.display = "block";
     const movie = ["0076759", "0080684", "0086190", "0120915", "0121765", "0121766", "2488496", "2527336", "3748528", "3778644"]
@@ -65,7 +88,7 @@ btnMarvel.addEventListener("click", () => {
 });
 
 btnLotr.addEventListener("click", () => {
-    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/LordOTR.jpeg')";
+    document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/LordOTR.jpeg')";
     homePage.style.display = "none";
     movieDetails.style.display = "block";
     const movie = ["0120737", "0167261", "0167260", "0903624", "1170358", "2310332"]
