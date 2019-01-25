@@ -41,6 +41,7 @@ btnHome.onclick = () =>{
 }
 
 btnHarryPotter.addEventListener("click", () => {
+    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/HarryP.jpeg')";
     homePage.style.display = "none";
     movieDetails.style.display = "block";
     const movie = ["0241527", "0295297", "0304141", "0330373", "0373889", "0417741", "0926084", "1201607", "3183660", "4123430"]
@@ -48,6 +49,7 @@ btnHarryPotter.addEventListener("click", () => {
 });
 
 btnStarWars.addEventListener("click", () => {
+    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/StarWars.jpeg')";
     homePage.style.display = "none";
     movieDetails.style.display = "block";
     const movie = ["0076759", "0080684", "0086190", "0120915", "0121765", "0121766", "2488496", "2527336", "3748528", "3778644"]
@@ -63,6 +65,7 @@ btnMarvel.addEventListener("click", () => {
 });
 
 btnLotr.addEventListener("click", () => {
+    document.body.style.backgroundImage ="url('https://raw.githubusercontent.com/AliceInWonderDev/Hackaton-Final-CC/master/UX/Prototipo%20de%20alta%20fidelidad/Poster%20Pel%C3%ADculas/LordOTR.jpeg')";
     homePage.style.display = "none";
     movieDetails.style.display = "block";
     const movie = ["0120737", "0167261", "0167260", "0903624", "1170358", "2310332"]
@@ -118,15 +121,22 @@ const printMovies = (movie) => {
                         <div class="card-image">
                             <img src="${element.Poster}">
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">${element.Title}</span>
-                            <ul>
-                                <li>Year: ${element.Year}</li>
-                                <li>Plot: ${element.Plot}</li>
-                                <li>Director: ${element.Director}</li>
-                            </ul>
+                        <div>
+                            <li>${element.Title}</li>
+                            <li>Genre: ${element.Rated}</li>
+                            <li>Genre: ${element.Genre}</li>
+                            <li>Time: ${element.Runtime}</li>
                         </div>
                     </div>
+                </div>
+                    <br>
+                    <br>
+                <div class="col s5 m4 l3">
+                        <div id="plotColor">
+                            <b>Plot: <b>
+                            <p>${element.Plot}</p>
+                        </div>
+                   
                 </div>
                 `
             }
